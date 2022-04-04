@@ -11,32 +11,14 @@ body {
   font-family: $fontFamilyOverpass;
   font-weight: 400;
   line-height: 1.2;
-  height: 100vh;
   color: #000;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100%;
-}
-
 h1 {
-  font-family: $fontFamilyUbuntu;
-  font-weight: 900;
+  font-family: $fontFamilyOverpass;
+  font-weight: 600;
   font-size: 2rem;
   color: $white;
-  letter-spacing: 3px;
-  padding-bottom: 1rem;
-}
-
-h2 {
-  font-family: $fontFamilyUbuntu;
-  font-weight: 900;
-  color: black;
-  width: 80%;
-  margin: auto;
   padding-bottom: 1rem;
 }
 

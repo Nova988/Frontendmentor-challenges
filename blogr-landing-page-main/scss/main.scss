@@ -3,9 +3,52 @@
 @import "hamburgerMenu";
 @import "utilitys";
 
+/////////////// Header ////////////////
+#main-header {
+  background: url("../images/bg-pattern-intro-mobile.svg") no-repeat top 35%
+    left 35%;
+  background: url("../images/bg-pattern-intro-mobile.svg") no-repeat top 35%
+      left 35%,
+    linear-gradient(125deg, #ff8f70, #ff3d54);
+  min-height: 75vh;
+  border-bottom-left-radius: 100px;
+  padding: 2rem 1.5rem;
+}
 
+.header-content {
+  padding: 7rem 1rem;
+  text-align: center;
+  color: $white;
 
+  p {
+    padding: 0 1rem;
+    padding-bottom: 3rem;
+  }
+}
 
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/////////////// Navbar ////////////////
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+/////////////// Future Section ////////////////
+#future {
+  padding-top: 6rem;
+  padding-bottom: 0;
+
+  .image {
+    padding-top: 2rem;
+  }
+}
 
 @import "media/mediaMedium.scss";
 @import "media/mediaLarge.scss";

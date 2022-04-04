@@ -1,1 +1,38 @@
+// Buttons
+.btn {
+  display: block;
+  padding: 0.75em 1rem;
+  background-color: $white;
+  color: $lightred;
+  font-weight: 700;
+  border-radius: 1.5em;
+  min-width: 130px;
 
+  &--secondary {
+    background-color: inherit;
+    color: $white;
+    border: 1px solid $white;
+  }
+}
+
+// Section
+.section {
+  padding: 0 1rem;
+  text-align: center;
+
+  &__header {
+    color: $veryDarkBlue;
+    padding: 2rem 1rem 1.25rem 1rem;
+    font-size: 1.75rem;
+  }
+
+  &__content {
+    color: $veryDarkGrayishBlue;
+  }
+}
+
+.image {
+  img {
+    width: 100%;
+  }
+}
