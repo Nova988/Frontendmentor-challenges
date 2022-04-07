@@ -34,15 +34,44 @@
 }
 
 // Overlay
-.hamburger__menu__overlay {
+#menu-overlay {
   display: block;
   position: absolute;
-  top: 20%;
+  top: 12%;
   left: 50%;
   transform: translateX(-50%);
   background: $white;
-  width: 80%;
+  width: 90%;
   transition: 300ms ease opacity;
+  padding: 2rem 1.5rem;
+  text-align: center;
+
+  .box__el {
+    color: $veryDarkGrayishBlue;
+  }
+}
+
+.category {
+  &__title {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5em;
+    font-weight: 600;
+    color: $veryDarkBlackBlue;
+    padding-bottom: 1rem;
+    border: none;
+    margin: auto;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  &__subjects {
+    background: $lightGrayishBlue;
+    padding: 2rem;
+    border-radius: 1em;
+  }
 }
 
 .hamburger__menu__overlay-container {

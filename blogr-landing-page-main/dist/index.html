@@ -33,6 +33,8 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+
+    <script defer src="./main.js"></script>
   </head>
   <body>
     <header id="main-header">
@@ -40,7 +42,7 @@
         <div id="navbar">
           <img src="./images/logo.svg" alt="" />
           <div class="hamburger-menu">
-            <img src="./images/icon-hamburger.svg" alt="" />
+            <img class="menu-icon" src="./images/icon-hamburger.svg" alt="" />
           </div>
         </div>
       </nav>
@@ -51,6 +53,56 @@
           <a class="btn btn--primary" href="">Start for Free</a>
           <a class="btn btn--secondary" href="">Learn More</a>
         </div>
+      </div>
+      <div id="menu-overlay">
+        <div>
+          <div class="category">
+            <button class="category__title">
+              <p>Product</p>
+              <img src="./images/icon-arrow-dark.svg" alt="" />
+            </button>
+            <div class="category__subjects hide">
+              <ul>
+                <li class="box__el">Overview</li>
+                <li class="box__el">Pricing</li>
+                <li class="box__el">Marketplace</li>
+                <li class="box__el">Features</li>
+                <li class="box__el">Intergartion</li>
+              </ul>
+            </div>
+          </div>
+          <div class="category">
+            <button class="category__title">
+              <p>Product</p>
+              <img src="./images/icon-arrow-dark.svg" alt="" />
+            </button>
+            <div class="category__subjects hide">
+              <ul>
+                <li class="box__el">Overview</li>
+                <li class="box__el">Pricing</li>
+                <li class="box__el">Marketplace</li>
+                <li class="box__el">Features</li>
+                <li class="box__el">Intergartion</li>
+              </ul>
+            </div>
+          </div>
+          <div class="category">
+            <button class="category__title">
+              <p>Product</p>
+              <img src="./images/icon-arrow-dark.svg" alt="" />
+            </button>
+            <div class="category__subjects hide">
+              <ul>
+                <li class="box__el">Overview</li>
+                <li class="box__el">Pricing</li>
+                <li class="box__el">Marketplace</li>
+                <li class="box__el">Features</li>
+                <li class="box__el">Intergartion</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div></div>
       </div>
     </header>
     <main>
@@ -79,16 +131,22 @@
           in full control.
         </p>
       </section>
+
       <section id="art-infrastructure" class="section">
-        <h2 class="section__header section__header--light">
-          State of the Art Infrastructure
-        </h2>
-        <p class="section__content section__content--light">
-          ith reliability and speed in mind, worldwide data centers provide the
-          backbone for ultra-fast connectivity. This ensures your site will load
-          instantly, no matter where your readers are, keeping your site
-          competitive.
-        </p>
+        <div class="image image--mobile">
+          <img src="./images/illustration-phones.svg" alt="" />
+        </div>
+        <div class="text--box">
+          <h2 class="section__header section__header--light">
+            State of the Art Infrastructure
+          </h2>
+          <p class="section__content section__content--light">
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
       </section>
       <section id="free-open-single" class="section">
         <div class="image">

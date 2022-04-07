@@ -28,11 +28,20 @@
 
   &__content {
     color: $veryDarkGrayishBlue;
+    padding: 0 1.5rem;
+    padding-bottom: 1rem;
+    line-height: 1.5;
   }
 }
 
 .image {
+  display: flex;
+
   img {
     width: 100%;
   }
+}
+
+.hide {
+  display: none;
 }
