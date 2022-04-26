@@ -39,8 +39,72 @@
   <body>
     <header id="main-header">
       <nav>
-        <div id="navbar">
+        <div id="navbar" class="container">
           <img src="./images/logo.svg" alt="" />
+
+          <!-- Desktop navigation  -->
+          <div class="desktop-nav">
+            <div class="category">
+              <button class="category__title">
+                <p>Product</p>
+                <img
+                  class="category__icon"
+                  src="./images/icon-arrow-dark.svg"
+                  alt=""
+                />
+              </button>
+              <div class="category__subjects hide">
+                <ul>
+                  <li class="box__el"><a href="#">Overview</a></li>
+                  <li class="box__el"><a href="#">Pricing</a></li>
+                  <li class="box__el"><a href="#">Marketplace</a></li>
+                  <li class="box__el"><a href="#">Features</a></li>
+                  <li class="box__el"><a href="#">Integartions</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="category">
+              <button class="category__title">
+                <p>Company</p>
+                <img
+                  class="category__icon"
+                  src="./images/icon-arrow-dark.svg"
+                  alt=""
+                />
+              </button>
+              <div class="category__subjects hide">
+                <ul>
+                  <li class="box__el"><a href="#">About</a></li>
+                  <li class="box__el"><a href="#">Team</a></li>
+                  <li class="box__el"><a href="#">Blog</a></li>
+                  <li class="box__el"><a href="#">Careers</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="category">
+              <button class="category__title">
+                <p>Connect</p>
+                <img
+                  class="category__icon"
+                  src="./images/icon-arrow-dark.svg"
+                  alt=""
+                />
+              </button>
+              <div class="category__subjects hide">
+                <ul>
+                  <li class="box__el"><a href="#">Contact</a></li>
+                  <li class="box__el"><a href="#">Newsletter</a></li>
+                  <li class="box__el"><a href="#">LinkedIn</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="login-container">
+            <a class="btn btn--login" href="#">Login</a>
+            <a class="btn btn--signup" href="#">Sign-up</a>
+          </div>
+
+          <!-- Hamburger menu -->
           <div class="hamburger-menu">
             <img class="menu-icon" src="./images/icon-hamburger.svg" alt="" />
           </div>
@@ -54,55 +118,69 @@
           <a class="btn btn--secondary" href="">Learn More</a>
         </div>
       </div>
-      <div id="menu-overlay">
+
+      <!-- Hamburge menu overlay -->
+      <div id="menu-overlay" class="hide">
         <div>
           <div class="category">
             <button class="category__title">
               <p>Product</p>
-              <img src="./images/icon-arrow-dark.svg" alt="" />
+              <img
+                class="category__icon"
+                src="./images/icon-arrow-dark.svg"
+                alt=""
+              />
             </button>
             <div class="category__subjects hide">
               <ul>
-                <li class="box__el">Overview</li>
-                <li class="box__el">Pricing</li>
-                <li class="box__el">Marketplace</li>
-                <li class="box__el">Features</li>
-                <li class="box__el">Intergartion</li>
+                <li class="box__el"><a href="#">Overview</a></li>
+                <li class="box__el"><a href="#">Pricing</a></li>
+                <li class="box__el"><a href="#">Marketplace</a></li>
+                <li class="box__el"><a href="#">Features</a></li>
+                <li class="box__el"><a href="#">Integartions</a></li>
               </ul>
             </div>
           </div>
           <div class="category">
             <button class="category__title">
-              <p>Product</p>
-              <img src="./images/icon-arrow-dark.svg" alt="" />
+              <p>Company</p>
+              <img
+                class="category__icon"
+                src="./images/icon-arrow-dark.svg"
+                alt=""
+              />
             </button>
             <div class="category__subjects hide">
               <ul>
-                <li class="box__el">Overview</li>
-                <li class="box__el">Pricing</li>
-                <li class="box__el">Marketplace</li>
-                <li class="box__el">Features</li>
-                <li class="box__el">Intergartion</li>
+                <li class="box__el"><a href="#">About</a></li>
+                <li class="box__el"><a href="#">Team</a></li>
+                <li class="box__el"><a href="#">Blog</a></li>
+                <li class="box__el"><a href="#">Careers</a></li>
               </ul>
             </div>
           </div>
           <div class="category">
             <button class="category__title">
-              <p>Product</p>
-              <img src="./images/icon-arrow-dark.svg" alt="" />
+              <p>Connect</p>
+              <img
+                class="category__icon"
+                src="./images/icon-arrow-dark.svg"
+                alt=""
+              />
             </button>
             <div class="category__subjects hide">
               <ul>
-                <li class="box__el">Overview</li>
-                <li class="box__el">Pricing</li>
-                <li class="box__el">Marketplace</li>
-                <li class="box__el">Features</li>
-                <li class="box__el">Intergartion</li>
+                <li class="box__el"><a href="#">Contact</a></li>
+                <li class="box__el"><a href="#">Newsletter</a></li>
+                <li class="box__el"><a href="#">LinkedIn</a></li>
               </ul>
             </div>
           </div>
         </div>
-        <div></div>
+        <div>
+          <a class="btn btn--login" href="#">Login</a>
+          <a class="btn btn--signup" href="#">Sign-up</a>
+        </div>
       </div>
     </header>
     <main>

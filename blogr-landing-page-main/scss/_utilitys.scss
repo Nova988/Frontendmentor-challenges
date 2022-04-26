@@ -1,3 +1,11 @@
+.container {
+  color: black;
+  max-width: $containerWidth;
+  min-height: 100%;
+  margin: auto;
+  padding: 50px 25px 20px 25px;
+}
+
 // Buttons
 .btn {
   display: block;
@@ -12,6 +20,17 @@
     background-color: inherit;
     color: $white;
     border: 1px solid $white;
+  }
+
+  &--login {
+    color: $veryDarkBlue;
+    max-width: fit-content;
+  }
+
+  &--signup {
+    background: $gradient1;
+    color: $white;
+    max-width: fit-content;
   }
 }
 
@@ -42,6 +61,15 @@
   }
 }
 
+// javascript
 .hide {
   display: none;
+}
+
+#menu-overlay.hide {
+  display: none;
+}
+
+.category--open {
+  opacity: 0.7;
 }
