@@ -309,7 +309,7 @@ a {
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   #menu-overlay {
-    top: 20%; } }
+    top: 25%; } }
 
 @media screen and (max-width: 899px) {
   .desktop-nav {
