@@ -196,7 +196,7 @@ a {
   justify-content: center;
   align-items: center; }
   .image img {
-    width: 100%; }
+    max-width: 100%; }
 
 .hide {
   display: none; }
@@ -269,8 +269,6 @@ a {
 
 #free-open-single {
   padding: 3rem 0 0 0; }
-  #free-open-single img {
-    width: 150%; }
   #free-open-single .section__content {
     padding: 0 2.5rem; }
 
