@@ -192,7 +192,9 @@ a {
     line-height: 1.5; }
 
 .image {
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .image img {
     width: 100%; }
 
