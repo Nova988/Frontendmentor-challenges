@@ -11,6 +11,10 @@ const categoryIcon = document.querySelectorAll(".category__icon");
 const menuOverlay = document.getElementById("menu-overlay");
 const mediaLarge = window.matchMedia("(min-width: 900px)");
 
+// Images
+const imageEditor = document.querySelector(".image--editor");
+const imageLaptop = document.querySelector(".image--laptop");
+
 if (!mediaLarge.matches) {
   hamburgerMenu.addEventListener("click", function () {
     // Show mobile menu
@@ -30,6 +34,8 @@ if (!mediaLarge.matches) {
 // Change category Icon image color
 if (mediaLarge.matches) {
   categoryIcon.forEach((x) => (x.src = "./images/icon-arrow-light.svg"));
+  imageEditor.src = "./images/illustration-editor-desktop.svg";
+  imageLaptop.src = "./images/illustration-laptop-desktop.svg";
 }
 
 // Navigation functionality

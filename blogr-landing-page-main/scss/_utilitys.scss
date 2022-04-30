@@ -3,18 +3,22 @@
   max-width: $containerWidth;
   min-height: 100%;
   margin: auto;
-  padding: 50px 25px 20px 25px;
+  padding: 0px 25px 0px 25px;
 }
 
 // Buttons
 .btn {
-  display: block;
   padding: 0.75em 1rem;
   background-color: $white;
   color: $lightred;
   font-weight: 700;
   border-radius: 1.5em;
   min-width: 130px;
+  transition: $hoverTransition;
+
+  &--primary {
+    border: 1px solid $white;
+  }
 
   &--secondary {
     background-color: inherit;

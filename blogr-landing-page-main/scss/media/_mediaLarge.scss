@@ -1,8 +1,39 @@
 @media screen and (max-width: 899px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .login-container {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 900px) {
   // utilitys
+
+  // Button hover effects
+  .btn--primary {
+    &:hover {
+      background: inherit;
+      color: $white;
+    }
+  }
+
+  .btn--secondary {
+    &:hover {
+      background: $white;
+      color: $lightred;
+    }
+  }
+
+  .section__header {
+    font-size: 2rem;
+    padding-left: 0;
+  }
+
+  .section__content {
+    padding-left: 0;
+  }
 
   // navbar
 
@@ -91,6 +122,132 @@
       &--signup {
         background: inherit;
       }
+    }
+  }
+
+  // Header contenten
+  .header-content {
+    padding-top: 15%;
+  }
+
+  // future section
+  #future {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 8rem;
+    padding-right: 0;
+
+    .section {
+      text-align: left;
+
+      &__header {
+        grid-column: 1/3;
+      }
+    }
+
+    .image {
+      grid-column: 2/3;
+      grid-row: 2/4;
+      display: block;
+      position: relative;
+      overflow: hidden;
+
+      img {
+        width: 125%;
+        position: relative;
+      }
+    }
+
+    #introduction {
+      grid-row: 2/3;
+    }
+
+    #introduction,
+    #robust {
+      .section__header {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  /////////////// Art infrastructure Section ////////////////
+
+  #art-infrastructure {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6rem;
+    grid-template-rows: minmax(100px, 300px);
+    // background-position: top 80% left -90%;
+    // background-size: 80%;
+    background: url("../images/bg-pattern-circles.svg") no-repeat top 80% left -90%/
+        80%,
+      $gradientBody;
+
+    .text--box {
+      padding-bottom: 0;
+      padding-right: 3rem;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .section {
+      &__content {
+        padding: 0;
+      }
+    }
+  }
+
+  .image--mobile {
+    img {
+      padding: 0rem;
+      top: -40%;
+      max-width: fit-content;
+    }
+  }
+
+  /////////////// Free open Single ////////////////
+  #free-open-single {
+    padding: 10rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .image {
+      grid-row: 1/3;
+      display: block;
+
+      img {
+        position: relative;
+        width: 150%;
+        right: 25vw;
+      }
+    }
+  }
+
+  #simple {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  /////////////// Free open Single ////////////////
+  #main-footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 5rem 15rem;
+    column-gap: 5rem;
+  }
+
+  .box {
+    text-align: left;
+
+    &__el {
+      max-width: fit-content;
+    }
+
+    &__el:hover {
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 }
