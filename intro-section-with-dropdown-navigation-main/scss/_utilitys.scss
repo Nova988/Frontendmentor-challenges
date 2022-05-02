@@ -1,0 +1,82 @@
+.container {
+  color: black;
+  max-width: $containerWidth;
+  min-height: 100%;
+  margin: auto;
+  padding: 0px 25px 0px 25px;
+}
+
+// Buttons
+.btn {
+  padding: 0.75em 1rem;
+  background-color: $white;
+  color: $lightred;
+  font-weight: 700;
+  border-radius: 1.5em;
+  min-width: 130px;
+  transition: $hoverTransition;
+
+  &--primary {
+    border: 1px solid $white;
+  }
+
+  &--secondary {
+    background-color: inherit;
+    color: $white;
+    border: 1px solid $white;
+  }
+
+  &--login {
+    color: $veryDarkBlue;
+    max-width: fit-content;
+  }
+
+  &--signup {
+    background: $gradient1;
+    color: $white;
+    max-width: fit-content;
+  }
+}
+
+// Section
+.section {
+  padding: 0 1rem;
+  text-align: center;
+
+  &__header {
+    color: $veryDarkBlue;
+    padding: 2rem 1rem 1.25rem 1rem;
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  &__content {
+    color: $veryDarkGrayishBlue;
+    padding: 0 1.5rem;
+    padding-bottom: 1rem;
+    line-height: 1.5;
+  }
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+// javascript
+.hide {
+  display: none;
+}
+
+#menu-overlay.hide {
+  display: none;
+}
+
+.category--open {
+  opacity: 0.7;
+}

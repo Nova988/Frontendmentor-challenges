@@ -1,0 +1,16 @@
+@media screen and (min-width: 600px) {
+  #navbar {
+    padding: 0 2rem;
+  }
+
+  .buttons {
+    justify-content: center;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  #menu-overlay {
+    top: 25%;
+  }
+}

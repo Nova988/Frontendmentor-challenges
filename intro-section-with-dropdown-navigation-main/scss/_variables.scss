@@ -1,0 +1,34 @@
+// Primary colors
+$lightred: hsl(356, 100%, 66%);
+$veryLightRed: hsl(355, 100%, 74%);
+$veryDarkBlue: hsl(208, 49%, 24%);
+
+// Neutral
+$grayishBlue: hsl(240, 2%, 79%);
+$lightGrayishBlue: hsl(240, 3%, 93%);
+$veryDarkGrayishBlue: hsl(207, 13%, 34%);
+$veryDarkBlackBlue: hsl(240, 10%, 16%);
+$white: hsl(0, 0%, 100%);
+
+// Gradient
+$gradient1: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+$gradientBody: linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+
+// Hover colors
+
+// Font
+$fontSize: 16px;
+
+$fontFamilyOverpass: "Overpass", sans-serif;
+$fontFamilyUbuntu: "Ubuntu", sans-serif;
+
+// Width
+$containerWidth: 1200px;
+$mobileWidth: 500px;
+$tabletWidth: 770px;
+
+// transitions
+$hoverTransition: all 200ms ease;
+
+// Padding
+$paddingSectionDesktop: 10%;
