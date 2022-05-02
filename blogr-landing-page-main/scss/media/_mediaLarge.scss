@@ -10,6 +10,37 @@
 
 @media screen and (min-width: 900px) {
   // utilitys
+  .section {
+    text-align: left;
+    padding: 0;
+
+    &-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+
+    &-content {
+      text-align: left;
+
+      .section__header {
+        text-align: left;
+        font-size: 1.5rem;
+      }
+    }
+
+    &__content {
+      padding: 0;
+    }
+  }
+
+  // images
+
+  .image {
+    img {
+      max-width: 125%;
+    }
+  }
 
   // Button hover effects
   .btn--primary {
@@ -132,41 +163,29 @@
 
   // future section
   #future {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 8rem;
     padding-right: 0;
 
     .section {
       text-align: left;
+      padding: 0;
 
-      &__header {
-        grid-column: 1/3;
+      &-wrapper {
+        margin-top: -100px;
+      }
+
+      &-content {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-left: 10%;
       }
     }
 
     .image {
       grid-column: 2/3;
-      grid-row: 2/4;
       display: block;
       position: relative;
       overflow: hidden;
-
-      img {
-        width: 125%;
-        position: relative;
-      }
-    }
-
-    #introduction {
-      grid-row: 2/3;
-    }
-
-    #introduction,
-    #robust {
-      .section__header {
-        font-size: 1.5rem;
-      }
+      margin-left: 10%;
     }
   }
 
@@ -208,19 +227,17 @@
 
   /////////////// Free open Single ////////////////
   #free-open-single {
-    padding: 10rem 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: 5rem 0;
 
     .image {
-      grid-row: 1/3;
       display: block;
+      margin-left: -40%;
+      // margin-right: 15%;
+      position: relative;
+    }
 
-      img {
-        position: relative;
-        width: 150%;
-        right: 25vw;
-      }
+    .section-content {
+      padding: 0 $paddingSectionDesktop;
     }
   }
 
