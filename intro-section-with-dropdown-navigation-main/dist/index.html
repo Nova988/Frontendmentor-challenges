@@ -1,39 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Features
-  Company
-  Careers
-  About
+    <link rel="stylesheet" href="./css/main.css" />
 
-  Login
-  Register
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  Make remote work
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="main-header">
+      <!-- Navbar -->
+      <nav id="navbar" class="flex-row">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="company logo snap" />
+        </div>
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <!-- Hamburger menu for mobile -->
+        <div id="hamburger-menu" class="hide-desktop">
+          <img src="./images/icon-menu.svg" alt="" />
+        </div>
+      </nav>
+
+      <!-- Hero section -->
+      <section id="section--hero" class="section">
+        <div class="section__wrapper grid-container">
+          <div class="section__image">
+            <img src="./images/image-hero-mobile.png" alt="" />
+          </div>
+          <div class="section__content">
+            <h1>Make remote Work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <a href="$" class="btn btn--primary">Learn more</a>
+            <div class="company-logos flex-row">
+              <div class="box">
+                <img
+                  src="./images/client-audiophile.svg"
+                  alt="audiophile logo"
+                />
+              </div>
+              <div class="box">
+                <img src="./images/client-databiz.svg" alt="databiz logo" />
+              </div>
+              <div class="box">
+                <img src="./images/client-maker.svg" alt="maker logo" />
+              </div>
+              <div class="box">
+                <img src="./images/client-meet.svg" alt="meet logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu overlay mobile/tablet -->
+      <div id="menu-overlay" class="hide-desktop hide">
+        <div class="hamburger-btn--close hide-desktop">
+          <img src="./images/icon-close-menu.svg" alt="hamburger close btn" />
+        </div>
+        <div class="menu__wrapper">
+          <ul class="menu__links">
+            <li class="menu__el">
+              <p>Features</p>
+              <ul class="el__links">
+                <li><a href="#">Todo list</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Reminders</a></li>
+                <li><a href="#">Planning</a></li>
+              </ul>
+            </li>
+            <li class="menu__el">
+              <p>company</p>
+              <ul class="el__links">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li class="menu__el"><a href="#">Careers</a></li>
+            <li class="menu__el"><a href="#">About</a></li>
+          </ul>
+          <div class="buttons">
+            <a href="#" class="btn">Login</a>
+            <a href="#" class="btn">Register</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>

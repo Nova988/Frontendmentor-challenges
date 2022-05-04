@@ -3,134 +3,47 @@
 @import "hamburgerMenu";
 @import "utilitys";
 
-/////////////// Header ////////////////
+////////// Header //////////
 #main-header {
-  background: url("../images/bg-pattern-intro-mobile.svg") no-repeat top 35%
-    left 35%;
-  background: url("../images/bg-pattern-intro-mobile.svg") no-repeat top 35%
-      left 35%,
-    linear-gradient(125deg, #ff8f70, #ff3d54);
-  min-height: 75vh;
-  border-bottom-left-radius: 100px;
-  padding: 2rem 1.5rem;
+  min-height: 100vh;
 }
 
-.header-content {
-  padding: 7rem 1rem;
-  text-align: center;
-  color: $white;
-
-  p {
-    padding: 0 1rem;
-    padding-bottom: 3rem;
-  }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-/////////////// Navbar ////////////////
+////////// Navbar //////////
 #navbar {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding-bottom: 2rem;
-}
-
-/////////////// Future Section ////////////////
-#future {
-  padding-top: 6rem;
-  padding-bottom: 0;
-
-  .image {
-    padding-top: 2rem;
-  }
-}
-
-/////////////// Art infrastructure Section ////////////////
-#art-infrastructure {
-  display: grid;
-  grid-template-rows: minmax(100px, 150px) 1fr;
-  background: url("../images/bg-pattern-circles.svg") no-repeat top -200px center/
-      150%,
-    $veryDarkBlackBlue;
-  margin-top: 250px;
-  padding: 3rem 0;
-  border-radius: 0 5em;
-
-  .text--box {
-    padding-bottom: 4rem;
-  }
-
-  .section__header {
-    color: $white;
-    font-size: 2.5rem;
-    font-weight: 600;
-    padding-top: 0;
-  }
-
-  .section__content {
-    color: $white;
-    padding: 0 2rem;
-  }
-}
-
-.image--mobile {
-  position: relative;
-
-  img {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -200%;
-    max-width: 400px;
-    padding-top: 3rem;
-  }
-}
-
-/////////////// Free open Single ////////////////
-
-#free-open-single {
-  padding: 3rem 0 0 0;
-}
-
-/////////////// Powerfull ////////////////
-#powerful {
-  padding-bottom: 5rem;
-}
-
-/////////////// Footer ////////////////
-#main-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  row-gap: 2rem;
-  background: $veryDarkBlackBlue;
-  padding: 5rem 0;
-  color: $white;
-  border-radius: 0 5em 0 0;
+  padding: $paddingY $paddingX;
+}
 
-  img {
-    padding-bottom: 2rem;
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+////////// Hero //////////
+#section--hero {
+  p {
+    color: $mediumGray;
+    padding: 0 $paddingX;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    margin: 1rem auto;
   }
 }
 
-.box {
-  min-width: 100px;
-  text-align: center;
+.company-logos {
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 1rem;
+  padding: 2rem $paddingX;
+  max-width: 100%;
 
-  &__title {
-    padding-bottom: 1.5rem;
-    font-size: 1rem;
-  }
-
-  &__el {
-    padding-bottom: 0.5rem;
-    color: $grayishBlue;
+  img {
+    flex-basis: 25%;
+    max-width: 100%;
   }
 }
 

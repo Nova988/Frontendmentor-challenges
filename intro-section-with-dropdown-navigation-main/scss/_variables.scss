@@ -1,26 +1,12 @@
-// Primary colors
-$lightred: hsl(356, 100%, 66%);
-$veryLightRed: hsl(355, 100%, 74%);
-$veryDarkBlue: hsl(208, 49%, 24%);
-
 // Neutral
-$grayishBlue: hsl(240, 2%, 79%);
-$lightGrayishBlue: hsl(240, 3%, 93%);
-$veryDarkGrayishBlue: hsl(207, 13%, 34%);
-$veryDarkBlackBlue: hsl(240, 10%, 16%);
-$white: hsl(0, 0%, 100%);
-
-// Gradient
-$gradient1: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-$gradientBody: linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
-
-// Hover colors
+$white: hsl(0, 0%, 98%);
+$mediumGray: hsl(0, 0%, 41%);
+$almostBlack: hsl(0, 0%, 8%);
 
 // Font
-$fontSize: 16px;
+$fontSize: 18px;
 
-$fontFamilyOverpass: "Overpass", sans-serif;
-$fontFamilyUbuntu: "Ubuntu", sans-serif;
+$fontFamily: "Epilogue", sans-serif;
 
 // Width
 $containerWidth: 1200px;
@@ -31,4 +17,5 @@ $tabletWidth: 770px;
 $hoverTransition: all 200ms ease;
 
 // Padding
-$paddingSectionDesktop: 10%;
+$paddingY: 1.25rem;
+$paddingX: 1rem;
